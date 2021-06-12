@@ -1,17 +1,19 @@
+import { ParallaxProvider } from "react-scroll-parallax";
+
+import Header from "./components/Header";
+import Cs from "./components/Cs";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import ActionButton from "./components/ActionButton";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ParallaxProvider>
+      <Header />
+      <Cs />
+      <Contact />
+      <Footer />
+      <ActionButton />
+    </ParallaxProvider>
   );
 }
 
